@@ -13,9 +13,9 @@
 </head>
 <body>
     <header>
-        <h1>Welcome</h1>
+        <h1 id="Welcome">Welcome</h1>
     </header>
-    <h2>Let's go</h2>
+    <h2 id="LetsGo">Let's go</h2>
     <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> <span style="color:green" > Dolorem quis magnam aliquam nesciunt voluptatibus ex iure quod. Eos, cum deleniti.</span> <br> Labore at quidem doloremque tempore voluptatum eos amet fuga dolores.
     </p>
@@ -28,7 +28,7 @@
 
     <hr>
     
-    <h2>Contáctame</h2>
+    <h2 id="Contact">Contáctame</h2>
     <form action="/formulario" method="POST"> <!-- method(GET/POST) -->
         <label for="name">Nombres</label>
         <input type="text" id="name" name="name" placeholder="Ejem: Chavo"><br>
@@ -45,7 +45,7 @@
 
     <hr>
 
-    <h2>Listas</h2><!-- nav>ul*4>li>a -->
+    <h2 id="Lists">Listas</h2><!-- nav>ul*4>li>a -->
     <ul>
         <li>
             <ol>
@@ -62,13 +62,13 @@
 
     <hr>
 
-    <h2>Tablas</h2>
+    <h2 id="Tables">Tablas</h2>
     <table style="border: 1px solid blue; width: 300px;">
         <thead>
             <tr> <!-- TableRow , para cada nueva fila-->
-                <th>Header 1</th><!-- TableHeader -->
-                <th>Header 2</th>
-                <th>Header 3</th>
+                <th>TableHeader 1</th><!-- TableHeader -->
+                <th>TableHeader 2</th>
+                <th>TableHeader 3</th>
             </tr>
         </thead>
         <tbody>
@@ -94,15 +94,66 @@
 
     <hr>
 
-    <header>
-        <h2>Blog</h2>
+    <header><!-- NO puede haber un header dentro de otro header ni dentro de un footer, pero sí pueden haber muchos header -->
+        <h2 id="BlogTitle">Nombre del Blog</h2><!-- id solo para una etiqueta -->
     </header>
+    <div>
+        <p>Párrafo dentro de DIV</p>
+    </div>
+    <nav>
+        <header>
+            Menú del Blog
+        </header>
+    </nav>
     <section>
         <article>
-            <h3>Título de post</h3>
-            <p>Texto en el post</p>
-            img
+            <header>
+                <h3 class="PostTitle">Título de post 1</h3><!-- class para identificar más de una etiqueta -->
+            </header>
+            <section>
+                <p>Descripción del post 1</p>
+                <img src="img/GoogleLogo.png" alt="Google" width="100">
+                <p>Texto del post 1 <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam culpa placeat ullam inventore obcaecati aliquid distinctio autem veniam ut?</p><br><br><br>
+            </section>
+            <header>
+                <h3 class="PostTitle">Título de post 2</h3>
+            </header>
+            <section>
+                <p>Descripción del post 2</p>
+                <img src="img/GoogleLogo.png" alt="Google" width="100">
+                <p>Texto del post 2 <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam culpa placeat ullam inventore obcaecati aliquid distinctio autem veniam ut?</p><br><br><br>
+            </section>
+            <header>
+                <h3 class="PostTitle">Título de post 3</h3>
+            </header>
+            <section>
+                <p>Descripción del post 3</p>
+                <img src="img/GoogleLogo.png" alt="Google" width="100">
+                <p>Texto del post 3 <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam culpa placeat ullam inventore obcaecati aliquid distinctio autem veniam ut?</p><br><br><br>
+            </section>
         </article>
     </section>
+    <aside>
+        <section>
+        Otro Post (4)
+        </section>
+        <section>
+        Otro Post (5)
+        </section>
+        <section>
+        Otro Post (6)
+        </section>
+    </aside>
+    <hr>
+    <footer>
+        <a href="#Welcome">Welcome</a>
+        <a href="#LetsGo">Let's Go</a>
+        <a href="#Contact">Contáctame</a>
+        <a href="#Lists">Listas</a>
+        <a href="#Tables">Tablas</a>
+        <a href="#BlogTitle">Blog</a>
+        <a href="mailto:cesar.briones.alcantara@gmail.com">Escríbeme al email</a>
+        <p>Copyleft - Izquierdos reservados</p>
+    </footer>
 </body>
 </html>

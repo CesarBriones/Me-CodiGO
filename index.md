@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +7,12 @@
 </head>
 <body>
     <header>
-        <h1 id="Welcome">
-            Welcome
+        <h1>
+            César Briones
         </h1>
+        <h2 id="Welcome">
+            Welcome
+        </h2>
     </header>
     <p>This are the projects of César Briones learning with CodiGO</p>
     <h3>List</h3>

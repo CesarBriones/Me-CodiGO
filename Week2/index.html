@@ -10,29 +10,42 @@
     <form action="/formulario" method="POST"> <!-- method(GET/POST) -->
         <fieldset>
             <legend>Formulario</legend>
-            <label for="name">Nombres</label>
-            <input type="text" id="name" name="name" required placeholder="Ejem: Chavo"><br>
-            <label for="lastname">Apellidos</label>
-            <input type="text" id="lastname" name="lastname" required placeholder="Ejem: Del 8"><br>
-            <label for="birthday">Fecha de Nacimiento</label>
-            <input type="date" id="birthday" name="birthday" required><br>
-            <label for="gender">Género</label>
-            <select id="gender" name="gender" required>
-                <option value="">Elige tu sexo</option>
-                <option value="1">Masculino</option>
-                <option value="2">Femenino</option>
-            </select><br>
-            <label for="phone">Celular</label>
-            <input type="tel" id="phone" name="phone" required placeholder="Ejem: +51987654321"><br>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="Ejem: chavodel8@vecindad.com"><br>
-            <label for="password">Eliga una contraseña</label>
-            <input type="password" id="password" name="password" required><br>
-            <label for="status">Situación actual:</label><br>
-            <label>Trabajando<input type="radio" id="status" name="status" required></label>
-            <label>En búsqueda de trabajo<input type="radio" id="status" name="status" required><br></label>
-            <label for="justAdults">Soy mayor de edad</label>
-            <input type="checkbox" id="justAdults" name="justAdults" required><br><!-- checked para preseleccionar una opción -->
+            <label for="name">Nombres
+                <input type="text" id="name" name="name" required placeholder="Ejem: Chavo"><br>
+            </label>
+            <label for="lastname">Apellidos
+                <input type="text" id="lastname" name="lastname" required placeholder="Ejem: Del 8"><br>
+            </label>
+            <label for="birthday">Fecha de Nacimiento
+                <input type="date" id="birthday" name="birthday" required><br>
+            </label>
+            <label for="gender">Género
+                <select id="gender" name="gender" required>
+                    <option value="">Elige tu sexo</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                </select><br>
+            </label>
+            <label for="phone">Celular
+                <input type="tel" id="phone" name="phone" required placeholder="Ejem: +51987654321"><br>
+            </label>
+            <label for="email">Email
+                <input type="email" id="email" name="email" required placeholder="Ejem: chavodel8@vecindad.com"><br>
+            </label>
+            <label for="password">Eliga una contraseña
+                <input type="password" id="password" name="password" required><br>
+            </label>
+            <label for="status">Situación actual:<br>
+                <label>Trabajando
+                    <input type="radio" id="status" name="status" required>
+                </label>
+                <label>En búsqueda de trabajo
+                    <input type="radio" id="status" name="status" required><br>
+                </label>
+            </label>
+            <label for="justAdults">Soy mayor de edad
+                <input type="checkbox" id="justAdults" name="justAdults" required><br><!-- checked para preseleccionar una opción -->
+            </label>
             <textarea name="comment" id="comment" name="comment" cols="40" rows="5" placeholder="Comentarios adicionales"></textarea><br>
             <button type="reset" id="reset">Borrar</button>
             <button type="submit" id="submit">Enviar</button>
@@ -40,5 +53,7 @@
         <progress></progress><br>
         <progress value="0.34"></progress>
     </form>
+    <hr>
+    <a href="/Me-CodiGO/index.md">Lista de retos</a>
 </body>
 </html>

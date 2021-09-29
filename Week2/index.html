@@ -5,35 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input:focus{
+            border-color: 1px aquamarine;
+        }
+    </style>
+    <!-- !meta OpenGraph y TwitterCard oara compartir contenido en redes sociales -->
 </head>
 <body>
     <form action="/formulario" method="POST"> <!-- method(GET/POST) -->
         <fieldset>
             <legend>Formulario</legend>
             <label for="name">Nombres
-                <input type="text" id="name" name="name" required placeholder="Ejem: Chavo"><br>
+                <input type="text" id="name" name="name" placeholder="Ejem: Chavo" maxlength="30" required><br>
             </label>
             <label for="lastname">Apellidos
-                <input type="text" id="lastname" name="lastname" required placeholder="Ejem: Del 8"><br>
+                <input type="text" id="lastname" name="lastname" placeholder="Ejem: Del 8" maxlength="30" required><br>
             </label>
             <label for="birthday">Fecha de Nacimiento
-                <input type="date" id="birthday" name="birthday" required><br>
+                <input type="date" id="birthday" name="birthday" required> <br>
             </label>
             <label for="gender">Género
-                <select id="gender" name="gender" required>
+                <select id="gender" name= gender" required>
                     <option value="">Elige tu sexo</option>
                     <option value="1">Masculino</option>
                     <option value="2">Femenino</option>
                 </select><br>
             </label>
             <label for="phone">Celular
-                <input type="tel" id="phone" name="phone" required placeholder="Ejem: +51987654321"><br>
+                <input type="tel" id="phone" name="phone" placeholder="Ejem: +51987654321" maxlength="12" required pattern="[0-9]*"><br>
             </label>
             <label for="email">Email
-                <input type="email" id="email" name="email" required placeholder="Ejem: chavodel8@vecindad.com"><br>
+                <input type="email" id="email" name="email" placeholder="Ejem: chavodel8@vecindad.com" maxlength="50" required><br>
             </label>
             <label for="password">Eliga una contraseña
-                <input type="password" id="password" name="password" required><br>
+                <input type="password" id="password" name="password" minlength="8" maxlength="30" required><br>
             </label>
             <label for="status">Situación actual:<br>
                 <label>Trabajando
@@ -47,13 +53,14 @@
                 <input type="checkbox" id="justAdults" name="justAdults" required><br><!-- checked para preseleccionar una opción -->
             </label>
             <textarea name="comment" id="comment" name="comment" cols="40" rows="5" placeholder="Comentarios adicionales"></textarea><br>
-            <button type="reset" id="reset">Borrar</button>
+            <button type="reset" id="reset">Borrar todo</button>
             <button type="submit" id="submit">Enviar</button>
         </fieldset>
         <progress></progress><br>
         <progress value="0.67"></progress>
     </form>
     <hr>
+    
     <a href="https://cesarbriones.github.io/Me-CodiGO/">Lista de retos</a>
 </body>
 </html>
